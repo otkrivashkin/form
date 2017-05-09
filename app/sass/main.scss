@@ -21,6 +21,9 @@ body {
 		box-sizing: border-box;
 		border-collapse: collapse;
 	}
+	textarea {
+		margin-bottom: 15px;
+	}
 	input[type = text] {
 		width: 85%;
 	}
@@ -44,13 +47,8 @@ body {
 	max-width: 600px;
 	label {
 		display: block;
+		margin-bottom: 23px;
 	}
-	label:after {
-		content: '';
-		display: block;
-		height: 5px;
-	}
-
 	.label-group {
 		display: inline-block;
 		width: 25%;
@@ -66,11 +64,94 @@ body {
 			width: 100%;
 			display: inline-block;
 		}
-
+		textarea {
+			margin-bottom: 15px;
+		}
 		input {
-			content: '23';
-			height: 33px;
-			display: block;
+			margin-bottom: 20px;
+		}
+		input:focus,
+		textarea:focus {
+			background-color: yellow;
+			border-color: cyan;
 		}
 	}
 }
+
+.form-5 {
+	width: 350px;
+	label {
+		display: block;
+		overflow: hidden;
+		margin-bottom: 20px;
+		span {
+			vertical-align: top;
+		}
+		input {
+			float: right;
+			clear: both;
+			width: 57%;
+			height: 20px;
+			padding: 5px;
+			font-weight: 700;
+		}
+		input[type = text] {
+			background: url("../img/human-user-outline-icon.png") no-repeat scroll 1px center;
+			background-size: 20px;
+			padding-left: 20px;
+			width: 52.5%;
+			border-radius: 5px;
+			border-color: green;
+		}
+		input[type = email] {
+			border-color: blue;
+		}
+		textarea {
+			float: right;
+			clear: both;
+			width: 60%;
+			background: url("../img/letter-open-icon.png") no-repeat right bottom;
+			background-size: 40px;
+		}
+	}
+	input[type = submit] {
+		margin-left: 38%;
+		background: linear-gradient(360deg, #1301FE 20%, #F6F6F6 100%);
+		color: whitesmoke;
+		padding: 5px 10px 5px 10px;
+	}
+}
+
+.form-6 {
+	width: 500px;
+	label {
+		display: block;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

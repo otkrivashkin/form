@@ -66,23 +66,6 @@ gulp.task('img', function() {
 		.pipe(gulp.dest('dist/img')); // Выгружаем на продакшен
 });
 
-gulp.task('docs', function () {
-    var buildCss = gulp.src([ // Переносим библиотеки в docs
-        'app/css/main.css',
-        'app/css/libs.min.css'
-    ])
-        .pipe(gulp.dest('docs/css'));
-
-    var buildFonts = gulp.src('app/fonts/**/*') // Переносим шрифты в docs
-        .pipe(gulp.dest('docs/fonts'));
-
-    var buildJs = gulp.src('app/js/**/*') // Переносим скрипты в docs
-        .pipe(gulp.dest('docs/js'));
-
-    var buildHtml = gulp.src('app/*.html') // Переносим HTML в docs
-        .pipe(gulp.dest('docs'));
-});
-
 gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 
 	var buildCss = gulp.src([ // Переносим библиотеки в продакшен

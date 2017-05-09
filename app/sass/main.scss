@@ -153,9 +153,37 @@ body {
 	}
 }
 
+.form-7 {
+	width: 500px;
+	label {
+		display: block;
+	}
+}
 
+.form-7-1 {
+	margin-top: 20px;
+	width: 500px;
+	form:first-child {
+		display: inline-block;
+		width: 60%;
+	}
+	form:last-child {
+		display: inline-block;
+		width: 30%;
+	}
+	label {
+		display: block;
+	}
+}
 
+.form-7-2 {
+	width: 100%;
 
+	table, tr, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+}
 
 
 

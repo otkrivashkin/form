@@ -126,6 +126,30 @@ body {
 	width: 500px;
 	label {
 		display: block;
+		input {
+			margin: 0 10px 10px 0;
+		}
+
+		#search-icon {
+			background: url("../img/search-icon-png-0.png") no-repeat center center;
+			background-size: 15px;
+			padding: 20px 20px 0 10px;
+			vertical-align: middle;
+			border-radius: 50%;
+		}
+	}
+	label:nth-child(n+2) {
+		input {
+			border-radius: 5px;
+		}
+	}
+	label:nth-child(3) {
+		input {
+			background: url("../img/search-icon-png-0.png") no-repeat scroll 1px center;
+			background-size: 15px;
+			padding-left: 25px;
+			width: 27.5%;
+		}
 	}
 }
 

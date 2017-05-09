@@ -102,3 +102,20 @@ body {
   width: 500px; }
   .form-6 label {
     display: block; }
+    .form-6 label input {
+      margin: 0 10px 10px 0; }
+    .form-6 label #search-icon {
+      background: url("../img/search-icon-png-0.png") no-repeat center center;
+      background-size: 15px;
+      padding: 20px 20px 0 10px;
+      vertical-align: middle;
+      -webkit-border-radius: 50%;
+              border-radius: 50%; }
+  .form-6 label:nth-child(n+2) input {
+    -webkit-border-radius: 5px;
+            border-radius: 5px; }
+  .form-6 label:nth-child(3) input {
+    background: url("../img/search-icon-png-0.png") no-repeat scroll 1px center;
+    background-size: 15px;
+    padding-left: 25px;
+    width: 27.5%; }

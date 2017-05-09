@@ -178,14 +178,53 @@ body {
 
 .form-7-2 {
 	width: 100%;
-
-	table, tr, td {
+	margin-top: 50px;
+	table,tr,td {
 		border: 1px solid black;
 		border-collapse: collapse;
 	}
+
+
 }
 
+.form-7-3 {
+	width: 500px;
+	form {
+		//width: 40%;
+		display: inline-block;
+	}
+	input {
+		//width: 50px;
+		display: block;
+	}
+	input:after {
+		content: "unchecked";
+		display: inline-block;
+		margin-left: 20px;
+		color: orangered;
+	}
+	input:checked:after {
+		display: inline-block;
+		content: "checked";
+		width: 50px;
+	}
+	input:checked:before {
+		content: "";
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		border: 1px dashed goldenrod;
+	}
 
+	//input:checked:before {
+	//	content: "";
+	//	display: block;
+	//	background-color: orchid;
+	//	width: 10px;
+	//	height: 10px;
+	//	border: 1px dashed greenyellow;
+	//}
+}
 
 
 

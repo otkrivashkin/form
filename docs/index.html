@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1>Form 1. Placeholders.</h1>
+	<div class="form-1">
+		<form action="#">
+			<p><input type="text" placeholder="Input your Name"></p>
+			<p><input type="email" placeholder="Input your E-mail"></p>
+			<p><input type="password" placeholder="Input Password"></p>
+			<p><textarea name="message" cols="30" rows="5" placeholder="Input Message"></textarea></p>
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+
+	<h1>Form 2. In Table.</h1>
+	<div class="form-2">
+		<table>
+			<tr>
+				<td><label for="name-2">Input your Name</label></td>
+				<td><input id="name-2" type="text"></td>
+			</tr>
+			<tr>
+				<td><label for="email-2">Input your E-mail</label></td>
+				<td><input id="email-2" type="email"></td>
+			</tr>
+			<tr>
+				<td><label for="password-2">Input Password</label></td>
+				<td><input disabled id="password-2" type="password"></td>
+			</tr>
+			<tr>
+				<td><label for="message-2">Input Message</label></td>
+				<td><textarea disabled name="message" id="message-2" cols="30" rows="6"></textarea></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type="submit" value="Submit">
+				</td>
+			</tr>
+		</table>
+	</div>
+	<h1>Form 3. Without table.</h1>
+	<div class="form-3">
+		<form action="#">
+			<div class="label-group">
+				<label for="name-3">Input your Name</label>
+				<label for="email-3">Input your E-mail</label>
+				<label for="password-3">Input Password</label>
+				<label for="message-3">Input Message</label>
+			</div>
+			<div class="input-group">
+				<input type="text" id="name-3">
+				<input type="email" id="email-3">
+				<input type="password" id="password-3">
+				<textarea name="message" id="message-3" cols="30" rows="10"></textarea>
+				<input type="submit" value="Submit">
+			</div>
+		</form>
+	</div>
+
+
+
+
+
+
+
+
+
+	<script src="js/libs.min.js"></script>
+
+</body>
+</html>
